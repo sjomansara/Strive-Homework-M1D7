@@ -8,8 +8,7 @@
 table {
     text-align: center;
     font-family: Abel;
-    }
-
+}
 address {
     text-align: center;
     font-family: Abel;
@@ -29,9 +28,10 @@ img {
     float: left;
 }
 </style>
+
 <body>
 
-<h1>My Smartphone Shop</h1>
+<h1 id="myId">My Smartphone Shop</h1>
 
 <table class="center" style="width:70%">
 <tr>
@@ -85,6 +85,9 @@ img {
 <p>My Smartphone Shop</p>
   <p>Randomgatan 1, 123 45 Stockholm, Sweden</p>
 </address>
-
+<script>
+const element = document.getElementById("myId");
+element.innerHTML = "My Amazing Smartphone Shop";
+</script>
 </body>
 </html>
