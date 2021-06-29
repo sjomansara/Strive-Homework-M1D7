@@ -10,7 +10,7 @@ table {
     font-family: Abel;
 }
 body {
-    background-color: #d9ffe3;
+    background-color: #ffffff;
 }
 address {
     text-align: center;
@@ -34,7 +34,7 @@ img {
 
 <body>
 
-<h1 id="myId">My Amazing Smartphone Shop</h1>
+<h1 id="myId">My Smartphone Shop</h1>
 
 <table class="center" style="width:70%">
 <tr>
@@ -86,14 +86,30 @@ img {
       </form>
     </div>
     </div>
+<button onclick="changeH1Text()" type="button">Change h1 Text</button>
+<button onclick="changeBackgroundColor()" type="button">Change Background Color</button>
 <address>
 <p>My Smartphone Shop</p>
   <p>Randomgatan 1, 123 45 Stockholm, Sweden</p>
 </address>
 <script>
-const element = document.getElementById("myId");
-element.innerHTML = "My Smartphone Shop";
-document.body.style.backgroundColor = "#ffffff";
+function changeH1Text() {
+    const element = document.getElementById("myId")
+    if (element.innerHTML === "My Amazing Smartphone Shop") {
+        element.innerHTML = "My Smartphone Shop"
+    } else {
+        element.innerHTML = "My Amazing Smartphone Shop"
+    }
+}
+function changeBackgroundColor () {
+    var backgroundColor = document.body.style.backgroundColor
+
+    if (backgroundColor === "rgb(255, 255, 255)") {
+        document.body.style.backgroundColor = "#d9ffe3"
+    } else if (backgroundColor === "" || backgroundColor === "rgb(217, 255, 227)") {
+        document.body.style.backgroundColor = "#ffffff"
+    }
+}
 </script>
 </body>
 </html>
