@@ -30,6 +30,16 @@ h1 {
 img {
     float: left;
 }
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 </style>
 
 <body>
@@ -86,11 +96,14 @@ img {
       </form>
     </div>
     </div>
+<div class="buttons">
 <button onclick="changeH1Text()" type="button">Change h1 Text</button>
 <button onclick="changeBackgroundColor()" type="button">Change Background Color</button>
+<button onclick="changeAddress()" type="button">Change Address</button>
+</div>
 <address>
 <p>My Smartphone Shop</p>
-  <p>Randomgatan 1, 123 45 Stockholm, Sweden</p>
+  <p id="address">Randomgatan 1, 123 45 Stockholm, Sweden</p>
 </address>
 <script>
 function changeH1Text() {
@@ -108,6 +121,14 @@ function changeBackgroundColor () {
         document.body.style.backgroundColor = "#d9ffe3"
     } else if (backgroundColor === "" || backgroundColor === "rgb(217, 255, 227)") {
         document.body.style.backgroundColor = "#ffffff"
+    }
+}
+function changeAddress() {
+    const element = document.getElementById("address")
+    if (element.innerHTML === "Randomgatan 1, 123 45 Stockholm, Sweden") {
+        element.innerHTML = "Annangatan 2, 123 45 Stockholm, Sweden"
+    } else {
+        element.innerHTML = "Randomgatan 1, 123 45 Stockholm, Sweden"
     }
 }
 </script>
