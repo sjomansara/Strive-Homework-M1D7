@@ -4,53 +4,94 @@
 <title>Page Title</title>
 </head>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 table {
     text-align: center;
+    font-family: Abel;
     }
 
 footer {
     text-align: center;
+    font-family: Abel;
     }
+h1 {
+    text-align: center;
+    font-family: Abel;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+    font-family: Abel;
+}
 </style>
 <body>
 
 <h1>My Smartphone Shop</h1>
 
-<table style="width:100%">
+<table class="center" style="width:70%">
 <tr>
-    <th>Top Products</th>
+    <th>Our Top Products</th>
 </tr>
 <tr>
     <td><a href="https://www.amazon.com/Apple-iPhone-12-Mini-64GB/dp/B08PNN2SKF/ref=sr_1_14?crid=1LZ3IB5DXFQMX&dchild=1&keywords=phone&qid=1624969295&refinements=p_89%3AApple&rnid=2528832011&s=wireless&sprefix=phone%2Caps%2C333&sr=1-14">Apple iPhone 12 Mini (Renewed)</a></td>
-    <td>Price: $699,00</td>
+    <td>Price: <span style="color:red"> $699,00</span></td>
     <td>Description: 64GB, Blue, Fully unlocked</td>
     <td><img src="https://images-na.ssl-images-amazon.com/images/I/71IG9gjBhxL._AC_SL1500_.jpg" width="10%" height="auto"></td>
 </tr>
 <tr>
     <td><a href="https://www.amazon.com/Apple-iPhone-Plus-Fully-Unlocked/dp/B07663Z46Z/ref=sr_1_12?crid=1LZ3IB5DXFQMX&dchild=1&keywords=phone&qid=1624969295&refinements=p_89%3AApple&rnid=2528832011&s=wireless&sprefix=phone%2Caps%2C333&sr=1-12">Apple iPhone 8 Plus (Renewed)</a></td>
-    <td>Price: $289,00</td>
+    <td>Price: <span style="color:red">$289,00</span></td>
     <td>Description: 64GB, Gold, For AT&T / T-Mobile</td>
-    <td><img src="https://images-na.ssl-images-amazon.com/images/I/61yX3VKY7GL._AC_SL1500_.jpg" width="10%" height="auto"></td>
+    <td><img src="https://images-na.ssl-images-amazon.com/images/I/61yX3VKY7GL._AC_SL1500_.jpg" width="12%" height="auto"></td>
 </tr>
 <tr>
     <td><a href="https://www.amazon.com/Apple-iPhone-Max-64GB-Silver/dp/B08BF5J6VX/ref=sr_1_1?crid=1LZ3IB5DXFQMX&dchild=1&keywords=phone&qid=1624969233&refinements=p_89%3AApple&rnid=2528832011&s=wireless&sprefix=phone%2Caps%2C333&sr=1-1">Apple iPhone XS Max (Renewed)</a></td>
-    <td>Price: $502,00</td>
+    <td>Price: <span style="color:red">$502,00</span></td>
     <td>Description: 64GB, Silver, Unlocked</td>
     <td><img src="https://images-na.ssl-images-amazon.com/images/I/812P-Wji1QL._AC_SL1500_.jpg" width="15%" height="auto"></td>
 </tr>
 <tr>
     <td><a href="https://www.amazon.com/Apple-iPhone-Generation-64GB-Black/dp/B08R98BFZS/ref=sr_1_4?crid=1LZ3IB5DXFQMX&dchild=1&keywords=phone&qid=1624969233&refinements=p_89%3AApple&rnid=2528832011&s=wireless&sprefix=phone%2Caps%2C333&sr=1-4">Apple iPhone SE (2nd Generation) (Renewed)</a></td>
-    <td>Price: $327,00</td>
+    <td>Price: <span style="color:red">$327,00</span></td>
     <td>Description: 64GB, Black, Unlocked</td>
     <td><img src="https://images-na.ssl-images-amazon.com/images/I/81K%2BadaNRiL._AC_SL1500_.jpg" width="10%" height="auto"></td>
 </tr>
 <tr>
     <td><a href="https://www.amazon.com/Apple-iPhone-64GB-Midnight-Green/dp/B07ZQS6LPZ/ref=sr_1_5?crid=1LZ3IB5DXFQMX&dchild=1&keywords=phone&qid=1624969233&refinements=p_89%3AApple&rnid=2528832011&s=wireless&sprefix=phone%2Caps%2C333&sr=1-5">Apple iPhone 11 Pro Max (Renewed)</a></td>
-    <td>Price: $739,00</td>
+    <td>Price: <span style="color:red">$739,00</span></td>
     <td>Description: 64GB, Midnight Green, US version, Unlocked</td>
     <td><img src="https://images-na.ssl-images-amazon.com/images/I/71yIGykJFNS._AC_SL1500_.jpg" width="15%" height="auto"></td>
 </tr>
 </table>
+<div class="container">
+
+  <div style="text-align:center">
+
+    <h2>Contact us</h2>
+
+    <p>Leave us a message:</p>
+
+  </div>
+
+  <div class="row">
+
+  <div style="text-align:center">
+
+      <form action="/action_page.php">
+
+
+
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea> <br>
+
+        <input type="submit" value="Submit">
+
+      </form>
+
+    </div>
+
+    </div>
 <footer>
   <p>My Smartphone Shop</p>
   <p>Randomgatan 1, 123 45 Stockholm, Sweden</p>
